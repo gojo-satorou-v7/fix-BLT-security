@@ -69,7 +69,6 @@ from website.views.company import (
     ShowBughuntView,
     SlackCallbackView,
     accept_bug,
-    check_domain_security_txt,
     dashboard_view,
     delete_manager,
     delete_prize,
@@ -1094,7 +1093,6 @@ urlpatterns = [
     path("style-guide/", StyleGuideView.as_view(), name="style_guide"),
     path("reminder-settings/", reminder_settings, name="reminder_settings"),
     path("send-test-reminder/", send_test_reminder, name="send_test_reminder"),
-    path("check_domain_security_txt/", check_domain_security_txt, name="check_domain_security_txt"),
 ]
 
 if settings.DEBUG:
